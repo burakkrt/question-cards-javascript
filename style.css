@@ -10,6 +10,8 @@ html {
 
 body {
   font-size: 1.6rem;
+  color: var(--color-dark);
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -22,5 +24,155 @@ li {
 }
 
 :root {
+  --color-dark: #393E46;
+  --color-white: #EEEEEE;
+  --color-red: #DF2E38;
+  --color-turquoise: #00ADB5;
+  --color-blue: #3F72AF;
+  --color-yellow: #FCE38A;
+  --color-pink: #FC5185;
+  --color-brown: #B4846C;
+  --color-green: #539165;
+  --color-hardal: #EBB02D;
+  --color-darkblue: #3F497F;
+  --color-neongreen: #16FF00;
+  --color-soft: #FFFFE8;
+}
 
+.questions {
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 630px;
+}
+
+.questions-title {
+  margin-bottom: 3rem;
+
+}
+
+.questions-title h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+/*--- Question Cards ---*/
+
+.question-card {
+  background-color: var(--color-soft);
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px;
+}
+
+.question-card .card-title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.questions .question-card .card-title::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -1px;
+  width: 94%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.question-card .card-title .cart-title-text {
+  font-size: 1.8rem;
+}
+
+.question-card .card-title .open-btn {
+  position: relative;
+  all: inherit;
+  padding: 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.question-card .card-title .open-btn i {
+  transition-duration: 300ms;
+}
+
+.question-card .card-title .open-btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.question-card .card-title i {
+  font-size: 2rem;
+}
+
+.active i {
+  transform: rotate(90deg);
+}
+
+.question-card .card-body {
+  padding: 2rem;
+  display: none;
+}
+
+.question-card .card-body.show-desc {
+  display: block;
+}
+
+.question-card .card-body .card-body-text {
+
+}
+
+.text-yellow {
+  color: var(--color-yellow);
+  background-color: var(--color-darkblue);
+  padding: 2px 5px 5px 5px;
+  border-radius: 3px;
+}
+
+.text-blue {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  padding: 2px 5px 5px 5px;
+  border-radius: 3px;
+}
+
+.text-green {
+  color: var(--color-green);
+  background-color: var(--color-yellow);
+  padding: 2px 5px 5px 5px;
+  border-radius: 3px;
+}
+
+.text-soft {
+  color: var(--color-soft);
+  background-color: var(--color-brown);
+  padding: 2px 5px 5px 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .questions {
+    width: 90%;
+  }
+
+  .questions-title h2 {
+    letter-spacing: normal;
+  }xor
 }
