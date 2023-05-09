@@ -21,5 +21,5 @@ Go to the project directory
 ## Screen Shot
 
 
-https://github.com/burakkrt/question-cards-javascript/assets/99482906/d2955436-c62a-418b-aff7-902bc136d219
+https://github.com/burakkrt/question-cards-javascript/assets/99482906/29fd1795-7e38-4707-b88e-6641a9c7d6ce
 
